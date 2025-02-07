@@ -1,0 +1,50 @@
+Menu:
+1. Top rooms
+2. cheapest Room
+3. PPNWithRooms
+5. Exit
+Enter your choice (1-4): 1
+Top Rooms
+d:\POC\Python\EXAM\exam.py:32: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  return df.groupby('PType').apply(lambda x: larget_value(x, 2, "Reviews"))
+                           ID       City                Location                   PType    PPN  Nights  Beds  Baths  Reviews           Recent
+PType
+Entire Home/Apartment  IND178      Delhi           Dilshad Garden  Entire Home/Apartment  ₹6200     3.0   4.0    4.0      7.0       2022-05-12
+Private Room           IND179  Bangalore  Electronic City Phase 2           Private Room  ₹1800     1.0   1.0    1.0      5.0  August 25, 2022
+Shared Room            IND149     Delhi                    Dwarka            Shared Room   ₹900     1.0   1.0    NaN      2.0        20-Feb-22
+
+Menu:
+1. Top rooms
+2. cheapest Room
+3. PPNWithRooms
+5. Exit
+Enter your choice (1-4): 2
+max price         ID       City                Location                   PType            PPN  Nights  Beds  Baths  Reviews             Recent
+1   IND138   Bangalor              Indiranagar           Private Room           1800     NaN   1.0    1.0      2.0          15-Feb-23
+42  IND179  Bangalore  Electronic City Phase 2           Private Room          ₹1800     1.0   1.0    1.0      5.0    August 25, 2022
+24  IND161    Chennai                Velachery           Private Room  Eight Hundred     1.0   1.0    1.0      1.0         10/04/2022
+48  IND185      Delhi                Pitampura            Shared Room  Eight Hundred     1.0   NaN    1.0      2.0         10/03/2022
+12  IND149     Delhi                    Dwarka            Shared Room           ₹900     1.0   1.0    NaN      2.0          20-Feb-22
+4   IND141  Hyderabad            Jubilee Hills  Entire Home/Apartment           3800     3.0   3.0    3.0      5.0   2022-08-20 14:00
+10  IND147   Hydrabad               Gachibowli  Entire Home/Apartment          ₹4500     3.0   NaN    3.0      4.0         2022-01-10
+46  IND183    Kolkata                Lake Town           Private Room          ₹1200     1.0   1.0    1.0      3.0  February 15, 2023
+11  IND148     Mumbai                 Andheri            Private Room          ₹1200     1.0   1.0    1.0      3.0       Dec 25, 2021
+14  IND151       Pune            Shivaji Nagar           Private Room   Two Thousand     1.0   1.0    1.0      4.0         2022-05-15
+min price         ID       City       Location                   PType    PPN  Nights  Beds  Baths  Reviews        Recent
+1   IND138   Bangalor     Indiranagar           Private Room   1800     NaN   1.0    1.0      2.0     15-Feb-23
+49  IND186  Bangalore    Marathahalli  Entire Home/Apartment  ₹8000     3.0   5.0    5.0      NaN    2022-05-05
+44  IND181    Chennai           Adyar            Shared Room   ₹500     1.0   1.0    NaN      2.0    2022-04-01
+41  IND178      Delhi  Dilshad Garden  Entire Home/Apartment  ₹6200     3.0   4.0    4.0      7.0    2022-05-12
+12  IND149     Delhi           Dwarka            Shared Room   ₹900     1.0   1.0    NaN      2.0     20-Feb-22
+36  IND173  Hyderabad       Manikonda            Shared Room   ₹800     1.0   1.0    NaN      3.0    2022-07-15
+10  IND147   Hydrabad      Gachibowli  Entire Home/Apartment  ₹4500     3.0   NaN    3.0      4.0    2022-01-10
+32  IND169    Kolkata        New Town            Shared Room   ₹600     1.0   NaN    1.0      2.0     15-Apr-22
+7   IND144     Mumbai          Colaba            Shared Room   ₹800     1.0   1.0    1.0      NaN  Jun 18, 2022
+25  IND162       Pune   Koregaon Park  Entire Home/Apartment  ₹5800     3.0   3.0    3.0      NaN    2022-07-22
+
+Menu:
+1. Top rooms
+2. cheapest Room
+3. PPNWithRooms
+5. Exit
+Enter your choice (1-4):
